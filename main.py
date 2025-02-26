@@ -103,7 +103,7 @@ async def handle_message(update: Update, context: CallbackContext):
 
 # ✅ Main function to run bot
 def main():
-    BOT_TOKEN = "7738466078:AAFFSbV6m5VYmnBDjWfwufGvBHH9jya1qX8"
+    BOT_TOKEN = "7738466078:AAEmzOmM_Ft4tNDNgYQlVJmXMQ2I1LQTQaU"
     app = Application.builder().token(BOT_TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
