@@ -1,4 +1,3 @@
-import asyncio
 import requests
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
@@ -113,7 +112,7 @@ def main():
     print("🚀 Bot is running...")
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    app.run_polling()
+    app.run_polling(allowed_updates=Update.ALL_TYPES, sig_handler=None)
 
 if __name__ == "__main__":
     main()
