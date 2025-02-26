@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
 
 # 🔹 API Details
-API_KEY = "6979|EM5DmMcIYhcWbMJNZVwrz8qLnv6DIPkyffOWHx63"
+API_KEY = "6980|cxfHx9Li5z7VPN9m4p7WOtXJvP1Iev0NfBg7ThKd"
 API_URL = "https://zylalabs.com/api/6202/indian+vehicle+details+api/8654/rto+verification"
 
 # 🔹 Authorized Group ID (Replace with actual chat_id)
@@ -103,7 +103,7 @@ async def handle_message(update: Update, context: CallbackContext):
 
 # ✅ Main function to run bot
 def main():
-    BOT_TOKEN = "7738466078:AAEmzOmM_Ft4tNDNgYQlVJmXMQ2I1LQTQaU"
+    BOT_TOKEN = "7738466078:AAFFSbV6m5VYmnBDjWfwufGvBHH9jya1qX8"
     app = Application.builder().token(BOT_TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
